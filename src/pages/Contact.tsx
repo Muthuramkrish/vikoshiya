@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 // API base URL based on environment
 const API_BASE_URL = import.meta.env.VITE_API_URL || (
   import.meta.env.PROD 
-    ? 'https://vikoshiya-technologies.vercel.app/api'
+    ? 'https://vikoshiya.vercel.app/api'
     : 'http://localhost:5000/api'
 );
 
