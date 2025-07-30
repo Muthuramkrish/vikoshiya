@@ -14,34 +14,22 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "backend/server.js"
+      "source": "/api/(.*)",
+      "destination": "backend/server.js"
     },
     {
-      "src": "^/assets/(.*)\\.js$",
-      "headers": {
-        "Content-Type": "application/javascript"
-      },
-      "dest": "/assets/$1.js"
+      "source": "^/assets/(.*)\\.js$",
+      "destination": "/assets/$1.js"
     },
     {
-      "src": "^/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "^/assets/(.*)",
+      "destination": "/assets/$1"
     },
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/.*",
-      "headers": {
-        "Cache-Control": "public, max-age=0, must-revalidate"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
@@ -60,6 +48,15 @@
         {
           "key": "Content-Type",
           "value": "text/css"
+        }
+      ]
+    },
+    {
+      "source": "/.*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
     }
