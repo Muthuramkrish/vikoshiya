@@ -12,9 +12,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Email configuration
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'vikoshiya.muthuramakrishnan@gmail.com';
-const GMAIL_USER = process.env.GMAIL_USER || 'vikoshiya.muthuramakrishnan@gmail.com';
-const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD || 'dcrh ypgi nxym tmbb';
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const GMAIL_USER = process.env.GMAIL_USER;
+const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
 
 // Validate email configuration
 if (!ADMIN_EMAIL || !GMAIL_USER || !GMAIL_APP_PASSWORD) {
