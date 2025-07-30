@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer';
+import webImage from '../assets/web.png';
 
 const WebDevelopment: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const WebDevelopment: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <img 
-              src="/src/assets/web.png" 
+              src={webImage} 
               alt="Team developing modern web applications" 
               className="rounded-lg shadow-xl max-w-lg md:max-w-xl w-full"
             />

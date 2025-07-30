@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer';
+import qaImage from '../assets/qa.png';
 
 const QualityAssurance: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const QualityAssurance: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <img 
-              src="/src/assets/qa.png" 
+              src={qaImage} 
               alt="QA specialists testing applications" 
               className="rounded-lg shadow-xl max-w-lg md:max-w-xl w-full"
             />
