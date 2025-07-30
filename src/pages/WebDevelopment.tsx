@@ -28,7 +28,7 @@ const WebDevelopment: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <img 
-              src="/src/assets/web.jpg" 
+              src="/src/assets/web.png" 
               alt="Team developing modern web applications" 
               className="rounded-lg shadow-xl max-w-lg md:max-w-xl w-full"
             />

@@ -28,7 +28,7 @@ const QualityAssurance: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <img 
-              src="/src/assets/qa.jpg" 
+              src="/src/assets/qa.png" 
               alt="QA specialists testing applications" 
               className="rounded-lg shadow-xl max-w-lg md:max-w-xl w-full"
             />
